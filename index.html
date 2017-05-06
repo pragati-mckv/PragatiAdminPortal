@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/TableExport/3.3.5/css/tableexport.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+</head>
+<body>
+	<div class="container" id="app">
+		<div class="row">
+			<div class="alert alert-success">
+				<strong>Select an event!</strong> Get the participant list for that event in Pragati 2k17.
+			</div>
+		</div>
+		<div class="row">
+			<div class="form-group">
+				<label for="sel1">Event:</label>
+				<select class="form-control" id="sel1">
+					<option disabled selected value="">Select an Event</option>
+					<option value="robowar">Robo War</option>
+					<option value="robofifa">Robo Fifa</option>
+					<option value="roboranger">Robo Ranger</option>
+					<option value="chasethemaze">Chase The Maze</option>
+					<option value="linefollower">Line Follower</option>
+					<option value="cs">Counter Strike</option>
+					<option value="dota">Dota</option>
+					<option value="nfs">NFS</option>
+					<option value="fifa">Fifa</option>
+					<option value="milimitia">Milimitia</option>
+					<option value="enigma">Enigma</option>
+					<option value="treasurehunt">Treasure Hunt</option>
+					<option value="codefiesta">Codefiesta</option>
+					<option value="bigshow">Big Show</option>
+					<option value="chess">Chess</option>
+					<option value="mathemania">Mathemania</option>
+					<option value="circuitdesign">Circuit Design</option>
+				</select>
+			</div>
+		</div>
+		<div class="table-responsive">
+			<table class="table table-bordered table-striped"  id="myTable">
+				
+			</table>
+		</div>
+	</div>
+</div>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js"></script>
+<script src="js/xls.core.js"></script>
+<script src="https://fastcdn.org/FileSaver.js/1.1.20151003/FileSaver.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/TableExport/3.3.5/js/tableexport.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/data_fetch.js"></script>
+</body>
+</html>
