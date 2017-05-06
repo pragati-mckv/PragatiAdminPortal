@@ -35,12 +35,15 @@ function showInfo(data, tabletop) {
 			//alert('Successfully processed!')
 			//console.log(data);
 			markup="";
+			var cnt=0;
 			//console.log($('#sel1').val()+"ih")
 			topMarkup($('#sel1').val());
 			markup+="<tbody>";
 			for(i=0;i<data.length;i++){
 				if(data[i].EventName==$('#sel1').val()){
+					cnt+=1;
 					markup+="<tr>";
+					markup+="<td>"+cnt+"</td>";
 					markup+=bodyMarkup(data[i],"TeamName")
 					markup+=bodyMarkup(data[i],"Member1")
 					markup+=bodyMarkup(data[i],"Member2")
@@ -63,7 +66,7 @@ function showInfo(data, tabletop) {
 		}
 
 		function topMarkup(eventName){
-			markup="<thead><tr>"
+			markup="<thead><tr><td>Sl. No</td>"
 			if(members[eventName]>1){
 				markup+="<td>Team Name</td>"
 			}
